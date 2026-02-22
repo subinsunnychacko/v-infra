@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+::-webkit-scrollbar {
+	display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+html {
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+/* CSS Variables for themes - defaults to navy-gold */
+:root {
+	--color-primary: #1a2e4c;
+	--color-secondary: #c9a227;
+	--color-accent1: #c75b39;
+	--color-accent2: #7a9e7e;
+	--color-accent3: #6b8cae;
+	--color-heading: #2b2b2b;
+	--color-body: #4a4a4a;
+	--color-muted: #717171;
+	--color-light-bg: #faf8f5;
+	--color-card-bg: #f5f2ec;
+	--color-dark-bg: #1a2e4c;
+	--color-text-on-dark: #ffffff;
+	--color-cta: #c9a227;
+	--color-cta-hover: #a8871f;
+	--color-cta-text: #1a2e4c;
+	--color-link: #1a2e4c;
+	--color-link-hover: #c9a227;
+	--color-success: #2e7d52;
+	--color-error: #c94a4a;
+	--color-border: #e5e2dc;
+}
+
+/* Font Classes */
+.font-heading {
+	font-family: "Playfair Display", serif;
+}
+
+.font-body {
+	font-family: "Inter", sans-serif;
+}
+
+/* Selection color */
+::selection {
+	background-color: var(--color-secondary);
+	color: var(--color-cta-text);
+}
+
+/* Animation classes */
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+/* Hide scrollbar for Chrome, Safari, Edge */
+::-webkit-scrollbar {
+	display: none;
+}
+
+@keyframes slideUp {
+	from {
+		opacity: 0;
+		transform: translateY(30px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes scaleIn {
+	from {
+		opacity: 0;
+		transform: scale(0.9);
+	}
+	to {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+.animate-fade-in {
+	animation: fadeIn 0.6s ease-out forwards;
+}
+
+.animate-slide-up {
+	animation: slideUp 0.6s ease-out forwards;
+}
+
+.animate-scale-in {
+	animation: scaleIn 0.5s ease-out forwards;
+}
