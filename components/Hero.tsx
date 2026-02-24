@@ -318,22 +318,6 @@ const Hero = () => {
 								</div>
 							</div>
 						</div>
-
-						{/* Material Palette Decoration */}
-						<div className="absolute -bottom-6 left-1/4 flex gap-2">
-							{[
-								currentTheme.colors.primary,
-								currentTheme.colors.secondary,
-								currentTheme.colors.accent1,
-								currentTheme.colors.accent2,
-							].map((color, i) => (
-								<div
-									key={i}
-									className="w-8 h-8 rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-110 hover:-translate-y-2"
-									style={{ backgroundColor: color }}
-								/>
-							))}
-						</div>
 					</div>
 				</div>
 			</div>

@@ -20,6 +20,7 @@ import {
 } from "lucide-react";
 import { useTheme } from "@/context/ThemeContext";
 import CurvedUnderline from "@/components/CurvedUnderline";
+import ClientLogos from "@/components/ClientLogos";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -458,13 +459,8 @@ export default function AboutPage() {
 							A few of our Esteemed Client
 						</h2>
 						<CurvedUnderline width="160" className="mx-auto" />
-						<div className="relative mt-10 aspect-[16/12] md:aspect-[16/10] lg:aspect-[16/9] w-full max-w-[1440px] mx-auto rounded-3xl overflow-hidden">
-							<Image
-								src="/images/image16.png"
-								alt="V Infra Engineers esteemed clients"
-								fill
-								className="object-contain"
-							/>
+						<div className="mt-12 -mx-6 lg:-mx-8 w-[100vw] relative left-1/2 -translate-x-1/2">
+							<ClientLogos />
 						</div>
 					</div>
 				</div>
