@@ -25,7 +25,7 @@ export default function RootLayout({
 				<title>V Infra Engineers Pvt. Ltd. | The Underground Force</title>
 				<meta
 					name="description"
-					content="Market leader for underground and deep foundations. Diaphragm Wall, Top-Down Construction, Shoring & Piling services in Delhi NCR since 2014."
+					content="Market leader for underground and deep foundations. Diaphragm Wall, Top-Down Construction, Shoring & Piling services in Delhi NCR."
 				/>
 			</head>
 			<body className="font-body">

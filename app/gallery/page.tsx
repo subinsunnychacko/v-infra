@@ -130,7 +130,7 @@ export default function GalleryPage() {
 			src: "/images/image15.jpeg",
 			title: "BHEL Shalimar Sector 16",
 			category: "commercial",
-			description: "Foundation work for BHEL commercial project.",
+			description: "",
 			location: "Sector 16, Noida",
 			year: "2022",
 		},
@@ -313,7 +313,7 @@ export default function GalleryPage() {
 										style={{
 											background: `linear-gradient(0deg, ${currentTheme.colors.primary}ee 0%, ${currentTheme.colors.primary}80 50%, transparent 100%)`,
 										}}>
-										<div className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+										{/* <div className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
 											<div className="flex items-center gap-2 mb-2">
 												<span
 													className="px-3 py-1 rounded-full text-xs font-medium capitalize"
@@ -344,7 +344,7 @@ export default function GalleryPage() {
 												}}>
 												📍 {item.location}
 											</p>
-										</div>
+										</div> */}
 										{/* Expand Icon */}
 										<div
 											className="absolute top-4 right-4 w-10 h-10 rounded-full flex items-center justify-center transform scale-0 group-hover:scale-100 transition-transform duration-300"
@@ -418,7 +418,7 @@ export default function GalleryPage() {
 							height={900}
 							className="object-contain w-full h-full rounded-lg"
 						/>
-						<div
+						{/* <div
 							className="absolute bottom-0 left-0 right-0 p-8 rounded-b-lg"
 							style={{
 								background: `linear-gradient(0deg, ${currentTheme.colors.primary}f0 0%, transparent 100%)`,
@@ -445,7 +445,7 @@ export default function GalleryPage() {
 							<p className="font-body text-base text-white/80 max-w-2xl">
 								{selectedImage.description}
 							</p>
-						</div>
+						</div> */}
 					</div>
 
 					{/* Counter */}

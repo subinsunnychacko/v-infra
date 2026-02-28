@@ -226,16 +226,16 @@ export default function AboutPage() {
 						<h1
 							className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold mb-4"
 							style={{ color: currentTheme.colors.textOnDark }}>
-							The Underground Force Since 2014
+							The Underground Force
 						</h1>
 						<CurvedUnderline width="200" className="mb-6" />
 						<p
 							className="font-body text-lg md:text-xl leading-relaxed"
 							style={{ color: `${currentTheme.colors.textOnDark}cc` }}>
-							Since 2014, V Infra Engineers has been the Delhi NCR&apos;s
-							trusted deep foundation partner. Our commitment to
-							precision engineering and safety has made us the
-							region&apos;s premier underground construction company.
+							V Infra Engineers has been the Delhi NCR&apos;s trusted
+							deep foundation partner. Our commitment to precision
+							engineering and safety has made us the region&apos;s
+							premier underground construction company.
 						</p>
 					</div>
 				</div>
@@ -337,11 +337,11 @@ export default function AboutPage() {
 								className="space-y-4 font-body text-base leading-relaxed"
 								style={{ color: currentTheme.colors.body }}>
 								<p>
-									V Infra Engineers began in 2014 as a specialized
-									engineering team in collaboration with SM Infra
-									Equipments and Heritage Infraspace India Ltd., with a
-									mission: deliver exceptional quality in diaphragm
-									wall and deep foundation construction.
+									V Infra Engineers began as a specialized engineering
+									team in collaboration with SM Infra Equipments and
+									Heritage Infraspace India Ltd., with a mission:
+									deliver exceptional quality in diaphragm wall and
+									deep foundation construction.
 								</p>
 								<p>
 									What started as a core engineering team has grown

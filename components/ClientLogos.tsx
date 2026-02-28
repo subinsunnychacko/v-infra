@@ -102,15 +102,15 @@ const ClientLogos = () => {
 			{/* Fade edges */}
 			<div
 				className="absolute left-0 top-0 bottom-0 w-16 md:w-32 z-10 pointer-events-none"
-				style={{
-					background: `linear-gradient(90deg, ${currentTheme.colors.lightBg} 0%, transparent 100%)`,
-				}}
+				// style={{
+				// 	background: `linear-gradient(90deg, ${currentTheme.colors.lightBg} 0%, transparent 100%)`,
+				// }}
 			/>
 			<div
-				className="absolute right-0 top-0 bottom-0 w-16 md:w-32 z-10 pointer-events-none"
-				style={{
-					background: `linear-gradient(270deg, ${currentTheme.colors.lightBg} 0%, transparent 100%)`,
-				}}
+			// className="absolute right-0 top-0 bottom-0 w-16 md:w-32 z-10 pointer-events-none"
+			// style={{
+			// 	background: `linear-gradient(270deg, ${currentTheme.colors.lightBg} 0%, transparent 100%)`,
+			// }}
 			/>
 
 			<div className="space-y-5">

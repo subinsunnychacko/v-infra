@@ -153,7 +153,7 @@ const Hero = () => {
 							Specialized engineering services for diaphragm wall
 							construction, deep foundations, and underground structures.
 							Precision engineering, safety-first approach, and on-time
-							project delivery since 2014.
+							project delivery .
 						</p>
 
 						{/* Buttons */}

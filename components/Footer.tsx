@@ -114,16 +114,12 @@ const Footer = () => {
 						<Link
 							href="/"
 							className="inline-flex items-center gap-3 mb-6">
-							<div
-								className="w-14 h-14 rounded-xl flex items-center justify-center"
-								style={{
-									backgroundColor: currentTheme.colors.secondary,
-								}}>
-								<span
-									className="text-2xl font-heading font-bold"
-									style={{ color: currentTheme.colors.ctaText }}>
-									P
-								</span>
+							<div className="w-12 h-12 rounded-xl overflow-hidden transition-transform duration-300 group-hover:scale-110">
+								<img
+									src="/logo/v-infra-logo.jpeg"
+									alt="V Infra Logo"
+									className="object-cover w-full h-full"
+								/>
 							</div>
 							<div>
 								<span className="font-heading text-2xl font-semibold text-white">
@@ -141,7 +137,7 @@ const Footer = () => {
 							style={{ color: "rgba(255,255,255,0.7)" }}>
 							Market leader for underground and deep foundations in Delhi
 							NCR. Engineering excellence, state-of-the-art equipment,
-							and operational expertise since 2014.
+							and operational expertise.
 						</p>
 						<div className="flex gap-3">
 							{socialLinks.map((social) => (

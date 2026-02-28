@@ -7,6 +7,7 @@ import { gsap } from "gsap";
 import { Menu, X, Palette, ChevronDown } from "lucide-react";
 import { useTheme } from "@/context/ThemeContext";
 import { themeList, ThemeName } from "@/utils/themes";
+import Image from "next/image";
 
 const Navbar = () => {
 	const [isOpen, setIsOpen] = useState(false);
@@ -97,12 +98,12 @@ const Navbar = () => {
 				<div className="flex items-center justify-between">
 					{/* Logo */}
 					<Link href="/" className="group flex items-center gap-3">
-						<div
-							className="w-12 h-12 rounded-xl flex items-center justify-center transition-transform duration-300 group-hover:scale-110"
-							style={{ backgroundColor: currentTheme.colors.primary }}>
-							<span className="text-xl font-heading font-bold text-white">
-								V
-							</span>
+						<div className="w-12 h-12 rounded-xl overflow-hidden transition-transform duration-300 group-hover:scale-110">
+							<img
+								src="/logo/v-infra-logo.jpeg"
+								alt="V Infra Logo"
+								className="object-cover w-full h-full"
+							/>
 						</div>
 						<div className="hidden sm:block">
 							<span
