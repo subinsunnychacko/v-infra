@@ -165,7 +165,8 @@ const Hero = () => {
 									className="transition-transform duration-300 group-hover:translate-x-1"
 								/>
 							</Link>
-							<button
+							<Link
+								href="/gallery"
 								className="group inline-flex items-center gap-3 px-8 py-4 rounded-xl font-body font-semibold text-base transition-all duration-300 hover:scale-105"
 								style={{
 									backgroundColor: "transparent",
@@ -177,7 +178,7 @@ const Hero = () => {
 									size={20}
 									className="transition-transform duration-300 group-hover:translate-x-1"
 								/>
-							</button>
+							</Link>
 						</div>
 					</div>
 

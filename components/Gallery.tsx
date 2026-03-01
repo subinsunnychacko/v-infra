@@ -307,22 +307,6 @@ const Gallery = () => {
 							height={800}
 							className="object-contain w-full h-full rounded-lg"
 						/>
-						<div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent rounded-b-lg">
-							<span
-								className="inline-block px-3 py-1 rounded-full text-xs font-medium mb-2 capitalize"
-								style={{
-									backgroundColor: `${currentTheme.colors.secondary}30`,
-									color: currentTheme.colors.secondary,
-								}}>
-								{selectedImage.category}
-							</span>
-							<h3 className="font-heading text-xl font-semibold text-white mb-1">
-								{selectedImage.title}
-							</h3>
-							<p className="font-body text-sm text-white/80">
-								{selectedImage.description}
-							</p>
-						</div>
 					</div>
 				</div>
 			)}
