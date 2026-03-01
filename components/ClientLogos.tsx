@@ -29,7 +29,6 @@ const ClientLogos = () => {
 
 				if (logos.length === 0) return;
 
-				// Split into 3 roughly equal rows
 				const perRow = Math.ceil(logos.length / 3);
 				const r1 = logos.slice(0, perRow);
 				const r2 = logos.slice(perRow, perRow * 2);
@@ -37,7 +36,7 @@ const ClientLogos = () => {
 
 				setRows([r1, r2, r3].filter((r) => r.length > 0));
 			} catch {
-				// Silently fail — no logos shown
+				// Silently fail
 			}
 		};
 
@@ -67,7 +66,7 @@ const ClientLogos = () => {
 	const MarqueeRow = ({
 		logos,
 		direction = "left",
-		speed = 35,
+		speed = 18,
 	}: {
 		logos: LogoItem[];
 		direction?: "left" | "right";
@@ -95,22 +94,22 @@ const ClientLogos = () => {
 	if (rows.length === 0) return null;
 
 	const directions: Array<"left" | "right"> = ["left", "right", "left"];
-	const speeds = [40, 35, 45];
+	const speeds = [18, 15, 20];
 
 	return (
 		<div className="relative w-full overflow-hidden">
 			{/* Fade edges */}
 			<div
 				className="absolute left-0 top-0 bottom-0 w-16 md:w-32 z-10 pointer-events-none"
-				// style={{
-				// 	background: `linear-gradient(90deg, ${currentTheme.colors.lightBg} 0%, transparent 100%)`,
-				// }}
+				style={{
+					background: `linear-gradient(90deg, ${currentTheme.colors.primary} 0%, transparent 100%)`,
+				}}
 			/>
 			<div
-			// className="absolute right-0 top-0 bottom-0 w-16 md:w-32 z-10 pointer-events-none"
-			// style={{
-			// 	background: `linear-gradient(270deg, ${currentTheme.colors.lightBg} 0%, transparent 100%)`,
-			// }}
+				className="absolute right-0 top-0 bottom-0 w-16 md:w-32 z-10 pointer-events-none"
+				style={{
+					background: `linear-gradient(270deg, ${currentTheme.colors.primary} 0%, transparent 100%)`,
+				}}
 			/>
 
 			<div className="space-y-5">
@@ -119,7 +118,7 @@ const ClientLogos = () => {
 						key={i}
 						logos={row}
 						direction={directions[i] || "left"}
-						speed={speeds[i] || 40}
+						speed={speeds[i] || 18}
 					/>
 				))}
 			</div>
@@ -142,10 +141,12 @@ const ClientLogos = () => {
 					}
 				}
 				.animate-client-scroll-left {
-					animation: client-scroll-left 40s linear infinite;
+					animation: client-scroll-left var(--scroll-speed, 18s) linear
+						infinite;
 				}
 				.animate-client-scroll-right {
-					animation: client-scroll-right 35s linear infinite;
+					animation: client-scroll-right var(--scroll-speed, 15s) linear
+						infinite;
 				}
 				.animate-client-scroll-left:hover,
 				.animate-client-scroll-right:hover {

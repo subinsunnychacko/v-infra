@@ -236,22 +236,6 @@ const Gallery = () => {
 								style={{
 									background: `linear-gradient(0deg, ${currentTheme.colors.primary}ee 0%, ${currentTheme.colors.primary}80 50%, transparent 100%)`,
 								}}>
-								<div className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-									<span
-										className="inline-block px-3 py-1 rounded-full text-xs font-medium mb-2 capitalize"
-										style={{
-											backgroundColor: `${currentTheme.colors.secondary}30`,
-											color: currentTheme.colors.secondary,
-										}}>
-										{item.category}
-									</span>
-									<h3 className="font-heading text-lg font-semibold text-white mb-1">
-										{item.title}
-									</h3>
-									<p className="font-body text-sm text-white/80">
-										{item.description}
-									</p>
-								</div>
 								<div
 									className="absolute top-4 right-4 w-10 h-10 rounded-full flex items-center justify-center transform scale-0 group-hover:scale-100 transition-transform duration-300"
 									style={{

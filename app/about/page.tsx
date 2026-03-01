@@ -29,7 +29,7 @@ export default function AboutPage() {
 	const pageRef = useRef<HTMLDivElement>(null);
 
 	const stats = [
-		{ value: "10+", label: "Years in Business", icon: Clock },
+		{ value: "16+", label: "Clients", icon: Clock },
 		{ value: "50+", label: "Major Projects", icon: Award },
 		{ value: "100+", label: "Skilled Professionals", icon: Users },
 		{ value: "100%", label: "Safety Compliance", icon: Heart },
@@ -445,7 +445,7 @@ export default function AboutPage() {
 				</div>
 			</section>
 			{/* Timeline Section */}
-			<section className="timeline-section py-20 lg:py-28">
+			{/* <section className="timeline-section py-20 lg:py-28">
 				<div className="max-w-4xl mx-auto px-6 lg:px-8">
 					<div className="text-center mb-16">
 						<span
@@ -464,7 +464,7 @@ export default function AboutPage() {
 						</div>
 					</div>
 				</div>
-			</section>
+			</section> */}
 
 			{/* CTA Section */}
 			<section

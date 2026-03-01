@@ -72,12 +72,6 @@ const Hero = () => {
 		return () => ctx.revert();
 	}, []);
 
-	const stats = [
-		{ value: "10+", label: "Years Experience" },
-		{ value: "50+", label: "Major Projects" },
-		{ value: "50m", label: "Max Depth Capacity" },
-	];
-
 	return (
 		<section
 			ref={heroRef}
@@ -178,35 +172,12 @@ const Hero = () => {
 									color: currentTheme.colors.primary,
 									border: `2px solid ${currentTheme.colors.primary}`,
 								}}>
-								<span
-									className="w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 group-hover:scale-110"
-									style={{
-										backgroundColor: currentTheme.colors.primary,
-									}}>
-									<Play size={16} fill="white" color="white" />
-								</span>
 								View Our Projects
+								<ArrowRight
+									size={20}
+									className="transition-transform duration-300 group-hover:translate-x-1"
+								/>
 							</button>
-						</div>
-
-						{/* Stats */}
-						<div
-							ref={statsRef}
-							className="hero-stats flex flex-wrap gap-8 md:gap-12">
-							{stats.map((stat, index) => (
-								<div key={index} className="text-center md:text-left">
-									<div
-										className="font-heading text-3xl md:text-4xl font-bold"
-										style={{ color: currentTheme.colors.primary }}>
-										{stat.value}
-									</div>
-									<div
-										className="font-body text-sm"
-										style={{ color: currentTheme.colors.muted }}>
-										{stat.label}
-									</div>
-								</div>
-							))}
 						</div>
 					</div>
 
